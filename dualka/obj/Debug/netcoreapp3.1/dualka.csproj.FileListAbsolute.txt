@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\dualka\dualka\bin\Debug\netcoreapp3.1\dualka.exe
+C:\Users\user\source\repos\dualka\dualka\bin\Debug\netcoreapp3.1\dualka.deps.json
+C:\Users\user\source\repos\dualka\dualka\bin\Debug\netcoreapp3.1\dualka.runtimeconfig.json
+C:\Users\user\source\repos\dualka\dualka\bin\Debug\netcoreapp3.1\dualka.runtimeconfig.dev.json
+C:\Users\user\source\repos\dualka\dualka\bin\Debug\netcoreapp3.1\dualka.dll
+C:\Users\user\source\repos\dualka\dualka\bin\Debug\netcoreapp3.1\dualka.pdb
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.csprojAssemblyReference.cache
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.AssemblyInfo.cs
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.dll
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.pdb
+C:\Users\user\source\repos\dualka\dualka\obj\Debug\netcoreapp3.1\dualka.genruntimeconfig.cache
