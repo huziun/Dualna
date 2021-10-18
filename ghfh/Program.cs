@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ghfh
 {
@@ -10,59 +7,106 @@ namespace ghfh
     {
         static void Main(string[] args)
         {
-            Car x1 = new Car();
-            Car x2 = new Car();
-            x1.Input();
-            x1.Print();
-            x1.ChangePrice();
+            List<Person> Human = new List<Person>();
+            for (int i = 0; i < 6; i++)
+            {
+                Human.Add(new Person());
+                Human[i].Input();
+                int age = Human[i].Age();
+                if(age < 17)
+                {
+                    Human[i].ChangeName("Very Young");
+                }
+            }
+            for(int i = 0; i < 6; i++)
+            {
+                Human[i].Output();
+            }
+            for(int i = 0; i < 6; i++)
+            {
+                
+                if(i == 5)
+                {
+                    break;
+                }
+                for(int j = 0; j < 6; j++)
+                {
+                    if (Human[i] == Human[j] && i != j)
+                    {
+                        Console.WriteLine("People with the same name: ");
+                        Human[i].Output();
+                        Human[j].Output();
+                    }
+                    
+                }
+            }
             Console.ReadLine();
         }
     }
-    class Car
+    class Person
     {
-        public double price;
-        public const string CompanyName = "WW";
-        public string name;
-        private string color;
-        public Car()
-        {
-            this.name = "WW Golf 7";
-            this.color = "red";
-        }
-        public Car(string b, string a){
+        private string name;
+        private DateTime birthYear;
+       
+        public Person(string b, int a){
             this.name = b;
-            this.color = a;
+            DateTime year = new DateTime(a, 1, 1, 1, 1, 1);
+            this.birthYear = year;
         }
-        public string Color
+        public Person()
+        {
+            this.name = "Monika";
+            this.birthYear = new DateTime(2008, 1, 1, 1, 1, 1);
+        }
+        public string Name
         {
             get
             {
-                return color;
+                return this.name;
             }
-            set
+        }
+        public DateTime BirthYear
+        {
+            get
             {
-                color = value;
+                return this.birthYear;
             }
         }
         public void Input()
         {
             Console.WriteLine("Enter name: ");
             this.name = Console.ReadLine();
-            Console.WriteLine("Enter color: ");
-            this.color = Console.ReadLine();
+            Console.WriteLine("Enter birthday year: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            DateTime year = new DateTime(a, 1, 1, 1, 1, 1);
+            this.birthYear = year;
         }
-        public void Print()
+        public void Output()
         {
-            Console.WriteLine($"Name: {name}\nColor: {color}\nCompany: {CompanyName}");
+            this.ToString();
         }
-        public void ChangePrice( )
+        public void ToString()
         {
-            Console.WriteLine("Enter price: ");
-            price = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter discount (%): ");
-            double x = Convert.ToDouble(Console.ReadLine());
-            double NewPrice = price - ((price * x) / 100);
-            Console.WriteLine("New price {0}", NewPrice);
+            Console.WriteLine("Name: {0}\nBirthday year: {1}", this.name, this.birthYear.Year);
+        }
+        public int Age()
+        {
+            DateTime now = DateTime.Today;
+            int age = now.Year - this.birthYear.Year;
+            Console.WriteLine("Age: {0}", age);
+            return age;
+        }
+        public void ChangeName(string NewName)
+        {
+            this.name = NewName;
+        }
+        public static bool operator == (Person first, Person second)
+        {
+            return first.name == second.name;
+        }
+        public static bool operator !=(Person first, Person second)
+        {
+            return !(first == second);
         }
     }
 }
