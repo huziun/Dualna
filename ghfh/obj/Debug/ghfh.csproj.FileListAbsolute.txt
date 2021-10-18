@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\ghfh\ghfh\bin\Debug\ghfh.exe.config
+C:\Users\user\source\repos\ghfh\ghfh\bin\Debug\ghfh.exe
+C:\Users\user\source\repos\ghfh\ghfh\bin\Debug\ghfh.pdb
+C:\Users\user\source\repos\ghfh\ghfh\obj\Debug\ghfh.csprojAssemblyReference.cache
+C:\Users\user\source\repos\ghfh\ghfh\obj\Debug\ghfh.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ghfh\ghfh\obj\Debug\ghfh.exe
+C:\Users\user\source\repos\ghfh\ghfh\obj\Debug\ghfh.pdb
